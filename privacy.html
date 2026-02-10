@@ -45,31 +45,32 @@
 
     <h2>How VocaLens Works</h2>
     <p>
-      VocaLens is a text-photo translator. The app allows users to take a photo,
-      extract text from the image, and translate the text into another language.
+      VocaLens is a text photo translator. The app allows users to take a photo,
+      extract text from the image, and translate that text into another language.
     </p>
 
     <h2>Camera Usage</h2>
     <p>
       VocaLens uses the device camera to capture images for text recognition.
-      Camera access is used solely for this core functionality.
+      Camera access is required solely for this functionality.
     </p>
 
-    <h2>Image Processing</h2>
+    <h2>Image and Text Recognition (OCR)</h2>
     <p>
-      All image processing and text recognition occur locally on the user’s device.
+      Text recognition is performed using Google ML Kit.
+      Image processing and text extraction occur on the user’s device.
       Images are not uploaded, stored, or transmitted to external servers.
     </p>
 
-    <h2>Text Processing and Translation</h2>
+    <h2>Text Translation</h2>
     <p>
-      After text is extracted from an image, the text content may be sent to a
-      language model (LLM) service for translation.
-      Only the extracted text is processed for this purpose.
+      After text is extracted from an image, the text may be sent to
+      ChatGPT-5 mini, a language model service, for translation.
+      Only the extracted text is transmitted for this purpose.
     </p>
     <p>
+      No images, camera data, or personally identifiable information are sent.
       The translated text is returned to the device and is not stored by VocaLens.
-      No images or personally identifiable information are included in this process.
     </p>
 
     <h2>Data Collection and Storage</h2>
@@ -89,9 +90,10 @@
 
     <h2>Third-Party Services</h2>
     <p>
-      VocaLens does not control how third-party services handle data.
-      Users are encouraged to review the privacy policies of these services
-      for more information.
+      VocaLens integrates third-party services (ML Kit, ChatGPT-5 mini,
+      and advertising partners) to provide its functionality.
+      VocaLens does not control how these services handle data.
+      Users are encouraged to review their respective privacy policies.
     </p>
 
     <h2>Children’s Privacy</h2>
